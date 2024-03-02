@@ -71,6 +71,11 @@ nav hr
     align-items: center;
     position:sticky;
 }
+nav .link
+{
+    color: white;
+    text-decoration: none;
+}
 .SubSecondBar .link
 {
     color: white;
@@ -79,6 +84,7 @@ nav hr
     font-weight:700;
     font-size:13px;
 }
+
 .SubSecondBar .SubSecondBarTwo
 {
     display: flex;

@@ -1,0 +1,32 @@
+.testimonialContainer
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width:80%;
+}
+.testimonialContainer
+{
+    margin-top:20px;
+    border: 2px dotted rgba(0, 0, 0, 0.2);
+    padding:10px;
+}
+.testimonialContainer .testimonialText
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left:20px;
+}
+.testimonialText h5
+{
+    font-weight:500;
+}
+.testimonialText h4
+{
+    color: black;
+    font-weight:600;
+    position:absolute;
+    top: 150px;
+    right:0;
+}

@@ -4,6 +4,8 @@
     height: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .ImageContainer
 {
@@ -19,10 +21,53 @@
     flex-direction: column;
     margin-top:40px;
 }
-.SubHeading h5
+ .LightText
 {
     font-weight:300;
     font-size:20px;
     width: 80%;
     margin-bottom: 10px;
+}
+.viewtoursbutton
+{
+    background-color:#F94F0F;
+    border-radius:3px;
+    border: none;
+    width:120px;
+    height:40px;
+    color: white;
+}
+.line
+{
+    border: 1px solid rgba(123, 123, 123, 0.1);
+    width:90%;
+    margin: 20px;
+}
+.HeadingStyleOrange
+{
+    font-weight:500;
+    color: #F94F0F;
+    font-size:23px;
+}
+.textDescriptionContainer
+{
+    width:90%;
+    height:auto;
+    text-align: justify;
+}
+.textDescriptionContainer .textWithDescription
+{
+    margin-bottom:20px;
+}
+.textDescriptionContainer .textWithDescription h3
+{
+    font-weight: 500;
+    font-size:25px;
+    margin-bottom:20px;
+}
+
+.textDescriptionContainer .textWithDescription h5
+{
+    font-weight:500;
+    font-size: 15px;
 }

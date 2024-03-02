@@ -12,14 +12,14 @@ function Header()
                <h4>+011 23235343</h4>
           </div>
           <nav>
-               <h4>Testimonials  | </h4>
-               <h4>Blogs  | </h4>
+               <h4><Link to="/testimonials" className='link'>Testimonials  | </Link></h4>
+               <h4><Link to="/register" className='link'>Register  | </Link></h4>
                <h4>About Us  | </h4>
                <h4>Contact Us  </h4>
           </nav>
        </div>
        <div className="SecondHeaderNavigation">
-          <img src={logo}/>
+          <Link to="/"><img src={logo}/></Link>
           <div className='SubSecondBar'>
              <h4><Link to='' className='link'>Tours In Ireland</Link></h4>
              <h4><Link to='' className='link'>International Tours</Link></h4>
