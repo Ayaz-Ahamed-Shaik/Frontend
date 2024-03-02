@@ -1,0 +1,28 @@
+.HomeContainer
+{
+    width:100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.ImageContainer
+{
+    width:100%;
+    height:500px;
+    background-color:black;
+}
+.SubHeading
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:40px;
+}
+.SubHeading h5
+{
+    font-weight:300;
+    font-size:20px;
+    width: 80%;
+    margin-bottom: 10px;
+}
