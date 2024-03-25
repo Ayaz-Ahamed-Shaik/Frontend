@@ -14,9 +14,9 @@ function Footer()
                      <h6>Working Hours:<br/>
                       (10:00 AM – 6:00 PM. Monday – Friday)
                       </h6>
-                     <h6>Telephone: +91 11 23415601</h6>
-                     <h6>Emergency Numbers:  + 91 - 9810100293,<br/> 9910049132, 7042150002, 7042160002, 9910048582</h6>
-                     <h6>Address: Flat No. 6, Shankar Market, 2nd Floor,<br/> Above Shop No.1 Shankar Market, Outer Circle,<br/> Opposite M Block, Connaught Place, Delhi, 110001, India.</h6>
+                     <h6>Telephone: +353 11 23415601</h6>
+                     <h6>Emergency Numbers:  + 353 - 9810100293,<br/> 9910049132, 7042150002, 7042160002, 9910048582</h6>
+                     <h6>Address: Flat No. 6, Phibsborough road,<br/> Above waterfall park,<br/> Opposite M Tiffin restaurant, Dublin, Ireland, D07X96V.</h6>
                   </div>
                   
                   <div className='menu'>
