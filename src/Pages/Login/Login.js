@@ -1,29 +1,20 @@
 import Header from '../../Components/Header/Header';
-import './Register.css';
-import Footer
- from '../../Components/Footer/Footer';
+import Footer from '../../Components/Footer/Footer';
 import { useEffect, useState } from 'react';
-import { register } from '../../API/Api';
+import { login, register } from '../../API/Api';
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
-function Register()
+function Login()
 {
    const dispatch=useDispatch();
   
-   const [name,setName]=useState('');
    const [email,setEmail]=useState('');
    const [password,setPassword]=useState('');
-   const [cPassword,setCpassword]=useState('');
    const [error,setError]=useState('');
-
-   const registerD=useSelector(state=>state);
+   const navigate=useNavigate();
 
    const registerData=()=>{
-          if(!name && name=="")
-          {
-            setError("Name not defined");
-            return;
-          }
           if(!email && email=="")
           {
             setError("Email not defined");
@@ -34,38 +25,37 @@ function Register()
             setError("Password not defined");
             return;
           }
-          if(password!==cPassword)
-          {
-            setError("Password not matched");
-            return;
-          }
+
         const form={
-         name:name,
          email:email,
          password:password,
         }
 
-          register(form)
+          login(form)
           .then(res=>{
             dispatch({type:"REGISTER_SUCCESS",payload:res});
-            console.log("register",res);
+            if(res.login)
+            {
+               localStorage.setItem("login","true");
+               navigate("/");
+            }
+            else
+            {
+              localStorage.setItem("login","false");
+            }
           })
           .catch(err=>{
             dispatch({type:"REGISTER_FAILURE",payload:err});
             throw err;
-          });   }
+          });}
 
 
     return (
         <div className='HomeContainer'>
           <Header/>
         <div className='registerContainer'>
-            <h2>Register Here</h2>
+            <h2>Welcome Back</h2>
             <div className='registerForm'>
-               <div className='option'>
-                <label>Name:</label>
-                  <input type='text' onChange={(e)=>setName(e.target.value)}/>
-               </div>
                <div className='option'>
                <label>Email:</label>
                   <input type='email' onChange={(e)=>setEmail(e.target.value)}/>
@@ -74,13 +64,9 @@ function Register()
                <label>Password:</label>
                   <input type='password' onChange={(e)=>setPassword(e.target.value)}/>
                </div>
-            <div className='option'>
-            <label>Confirm Password:</label>
-               <input type='text' onChange={(e)=>setCpassword(e.target.value)}/>
-            </div>
-              <button onClick={()=>{registerData()}}>Sign Up</button>
-              <button onClick={()=>{window.location.href="/login"}}>Login</button>
-
+               <button onClick={()=>{registerData()}}>Login</button>
+              <button onClick={()=>{window.location.href="/register"}}>Sign Up</button>
+           
         </div>
         </div>
           <Footer/>
@@ -88,4 +74,4 @@ function Register()
     );
 }
 
-export default Register;
+export default Login;

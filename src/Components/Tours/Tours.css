@@ -1,0 +1,72 @@
+.TourContainer
+{
+    display: flex;
+    width:100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+}
+.TourContainer .TourBar
+{
+    display: flex;
+    width: 800px;
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(202, 201, 201, 0.453);
+    border-radius: 5px;
+}
+.TourBar .DetailsTours
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+}
+.DetailsTours .TextTour
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-left: 30px;
+   
+}
+.TextTour h3
+{
+    color: black;
+}
+.TextTour h4
+{
+    color: rgb(142, 140, 140);
+    font-weight: 400;
+}
+.DetailsTours .ButtonTour
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    margin-right: 30px;
+    height:80px;
+}
+.ButtonTour button:nth-child(1)
+{
+    width: 80px;
+    height: 35px;
+    background-color:#F94F0F ;
+    color: white;
+    border: none;
+    border-radius:5px;
+}
+.ButtonTour button:nth-child(2)
+{
+    width: 100px;
+    height: 35px;
+    background-color:black ;
+    color: white;
+    border: none;
+    border-radius:5px;
+
+}
