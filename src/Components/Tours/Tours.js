@@ -17,7 +17,7 @@ function Tour({prop})
                     </div>
                     <div className='ButtonTour'>
                         <button>Details</button>
-                        <button>Book Now</button>
+                        <button onClick={()=>{(localStorage.getItem("login")=="true")?alert(`${prop.package} booked! Kindly contact us through enquiry form!`):alert("Kindly login first!")}}>Book Now</button>
                     </div>
                 </div>
              </div>
