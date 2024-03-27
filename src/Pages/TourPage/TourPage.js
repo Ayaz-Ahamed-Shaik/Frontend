@@ -20,17 +20,17 @@ function TourPage({prop})
           <Header/>
           {id=="Ireland"?
           <React.Fragment>
-          (<Tour prop={{img:tour1,package:"Port Blair Havelock Honeymoon Package",day:"04",night:"04"}}/>
+          <Tour prop={{img:tour1,package:"Port Blair Havelock Honeymoon Package",day:"04",night:"04"}}/>
           <Tour prop={{img:tour2,package:"Port Blair Havelock Honeymoon Package",day:"04",night:"04"}}/>
           <Tour prop={{img:tour3,package:"Port Blair Havelock Honeymoon Package",day:"04",night:"04"}}/>
-          <Tour prop={{img:tour4,package:"Port Blair Havelock Honeymoon Package",day:"04",night:"04"}}/>)
+          <Tour prop={{img:tour4,package:"Port Blair Havelock Honeymoon Package",day:"04",night:"04"}}/>
           </React.Fragment>
           :id=="Destination"?
           <React.Fragment>
-            (<Tour prop={{img:tour5,package:"Port Blair Havelock Honeymoon Package",day:"02",night:"03"}}/>
+            <Tour prop={{img:tour5,package:"Port Blair Havelock Honeymoon Package",day:"02",night:"03"}}/>
           <Tour prop={{img:tour6,package:"Port Blair Havelock Honeymoon Package",day:"04",night:"05"}}/>
           <Tour prop={{img:tour2,package:"Port Blair Havelock Honeymoon Package",day:"04",night:"05"}}/>
-          <Tour prop={{img:tour1,package:"Port Blair Havelock Honeymoon Package",day:"02",night:"03"}}/>)
+          <Tour prop={{img:tour1,package:"Port Blair Havelock Honeymoon Package",day:"02",night:"03"}}/>
           </React.Fragment>
           :undefined
           }

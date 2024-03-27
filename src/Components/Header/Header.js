@@ -47,7 +47,7 @@ function Header()
           </nav>
        </div>
        <div className="SecondHeaderNavigation">
-          <Link to="/"><img src={logo}/></Link>
+          <Link to="/"><img src={logo} width="70%" height="70%"/></Link>
           <div className='SubSecondBar'>
              <h4><Link to='/tour/Ireland' className='link'>Tours In Ireland</Link></h4>
              <h4><Link to='' className='link'>International Tours</Link></h4>
