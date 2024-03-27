@@ -21,22 +21,22 @@ function Register()
    const registerData=()=>{
           if(!name && name=="")
           {
-            setError("Name not defined");
+            alert("Name not defined");
             return;
           }
           if(!email && email=="")
           {
-            setError("Email not defined");
+            alert("Email not defined");
             return;
           }
           if(!password && password=="")
           {
-            setError("Password not defined");
+            alert("Password not defined");
             return;
           }
           if(password!==cPassword)
           {
-            setError("Password not matched");
+            alert("Password not matched");
             return;
           }
         const form={

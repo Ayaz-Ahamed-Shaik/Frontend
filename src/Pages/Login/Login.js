@@ -17,12 +17,12 @@ function Login()
    const registerData=()=>{
           if(!email && email=="")
           {
-            setError("Email not defined");
+            alert("Email not defined");
             return;
           }
           if(!password && password=="")
           {
-            setError("Password not defined");
+            alert("Password not defined");
             return;
           }
 
